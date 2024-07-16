@@ -1,0 +1,58 @@
+-Things that have to be changed per project(Or as you add more textures to the project):
+
+
+
+1. In MainMenu.cs Constructor, in the TextureDict instantiation, The "EmptyTile" texture needs to be resized for whatever tile dimensions you plan to use for the grid.
+For Example: My default project is a 25x25 tile size project, so the EmptyTile25x25 png is all Black, with 1 pixel of white outlining. Just rinse/repeat for any tile size desired. 
+I am aware that the tiles scale, and anything smaller than the 25x25 I am using will be hard to see. I'll fix it at some point.
+
+2. Right below the FontDict instantiation in the MainMenu.cs Constructor, the GameTextures dict is instantiated. This is where you will load all the textures used for the game.
+- For each new texture added, scroll down to the BuildPalette() method at the bottom of the same file. 
+- In this Method, we need to add the name of the new texture to the "TileNames" value, separated by a space. (Seperating by space allows the Levelbuilder class in the platformer to split and iterate them) 
+- Key/Values need to be added in this same dict. One for "TileNamePath" "FilePathForTheTile",
+- one for "TileNameCollide" and "true/false",
+- and one for "TileNamePaletteLocation"  with a value of Whatever coordinates you assign that tile on the palette. For the default project I am in, that is "0, -50".
+- This final key/value pair is added to aid in loading Jsons back into the program, allowing me to build the palette from the import/export screen, instead of having it built in the Mainmenu screen.
+
+3. Finally for every new texture added to the editor, you need to add it to the TilePalette list instantiation, at the very bottom of the MainMenu.cs file. Y Coords should be negative, 
+as you want it to hover above the grid in the editor screen.
+
+If you configure all of this correctly as you add new tiles into the program, you only have to do it once. Everytime you export a json, all of these configs will be saved into it, and you
+can import that same Map.json back into the program later, and have the same exact palette. I am aware that this poses a problem to loading new tiles into the project, and how to add them in after the
+fact, to edit a loaded map. It is on my long list of features to add/work through.
+
+-------------------------------------------------------------------------------------------
+
+- Basic controls in each state. (These will eventually get stuck into the F1 helpscreens for each state)
+
+
+
+- Main Menu
+    - If you want to load a map.json, click the "To import/export" button
+    - If you want to make a new grid, click each empty button, and type in the desired values. Make sure to press enter to confirm. If you get the bug where 1 button press enters multiple characters,
+    press enter a few times (Which will close the text input envents.) Then you can single click once, backspace and enter the desired value.
+    - Once all the fields are filled, you can click the button to generate grid, andd move to the editor.
+
+
+- Editor
+    - Move the camera with the arrow keys to scroll around.
+    - Palette is above the grid, on top left. Left click the desired texture to load it into your "Brush". Then left click on a grid node to "paint" that tile onto the grid.
+    - Right click on a grid node to "Erase"/revert it back to a default "Empty Tile".
+    - Click the "Import/Export" button near the top left of the grid to head to the export menu.
+
+
+- Import/Export Screen
+    NOTE: In case you didn't see the neon orange fine print, all level.json files you work with will be contained within the JsonLevels folder. All file extensions do not need
+    to be entered into the fields. Only the file names. Character restrictions for filenames apply here. This is designed for me, it's on the Hub at the request of someone. I will
+    however streamline this at some point.
+
+    - Buttons in this Menu are pretty self explanitory. Rules for text entry are the same as the Main Menu I have elborated on above, as well as the possibility to get the double/triple character 
+    input bug. Just hit the enter key a few times, and re-highlight the field, backspace, and enter your desired value.
+
+    - If the orange text "Import Complete!" doesn't  pop up when you import, double check to make sure your map.json is in the JsonLevels folder, and make sure your spelling is correct in
+    the import field. If this program spits out a map.json, it can load the very same one. (Provided you don't remove the loaded textures from the Content/TileEditorAssets/ folder)
+
+    
+
+
+

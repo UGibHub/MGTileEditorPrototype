@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "iFn9labdWfCdPZyJN9G3SrJn63t60qaMoiBqp0gWzNWd2gTmDFtB/U6Av2l3qa3qpRp3XKaVbSE1oQB3ARxxtA==",
+  "success": true,
+  "projectFilePath": "/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/TileEditorPrototype.csproj",
+  "expectedPackageFiles": [
+    "/home/gherb/.nuget/packages/monogame.content.builder.task/3.8.1.303/monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "/home/gherb/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
+    "/home/gherb/.nuget/packages/microsoft.netcore.app.ref/6.0.32/microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
+    "/home/gherb/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.32/microsoft.aspnetcore.app.ref.6.0.32.nupkg.sha512",
+    "/home/gherb/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.32/microsoft.netcore.app.host.linux-x64.6.0.32.nupkg.sha512"
+  ],
+  "logs": []
+}

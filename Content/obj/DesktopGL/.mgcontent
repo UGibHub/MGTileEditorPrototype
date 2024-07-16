@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/GameAssets/Textures/Tiles/BasicTile25x25.png</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Buttons/WideButton100x35.png</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Buttons/WideButton200x35.png</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Decorative/EditorArtandIcon.png</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Font/ButtonFont.spritefont</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Font/LargeFont.spritefont</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Font/MediumFont.spritefont</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Font/SmallFont.spritefont</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Sprites/EmptyTile25x25.png</File>
+    <File>/home/gherb/Documents/CSharp/ZMonogame StuffZ/TestingStuff/TileEditorPrototype/Content/TileEditorAssets/Sprites/MousePointer15x20.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
